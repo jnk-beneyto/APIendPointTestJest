@@ -1,6 +1,7 @@
 languaje: node_js
 node_js:
   - stable
+install: travis_wait 30 mvn install
 env:
   - DB_DEV="mongodb+srv://dbMongo:dbMongoPWD@cluster0-uelho.mongodb.net/test?retryWrites=true&w=majority"
   - YARN_GPG=no
