@@ -3,6 +3,7 @@ node_js:
   - stable
 env:
   - DB_DEV="mongodb+srv://dbMongo:dbMongoPWD@cluster0-uelho.mongodb.net/test?retryWrites=true&w=majority"
+  - YARN_GPG=no
 services:
   - mongodb
 before_script:
