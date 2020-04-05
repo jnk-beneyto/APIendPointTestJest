@@ -16,6 +16,10 @@ const {
 
 describe('Checking endpoints', () => {
 
+    afterAll(async () => {
+        console.log("... Test Ended");
+        app.close();
+    });
 
     it('gets the home endpoint', async (done) => {
         const response = await request.get('/');
